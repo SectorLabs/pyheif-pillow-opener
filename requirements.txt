@@ -1,1 +1,2 @@
-pyheif==0.7.1
+-i https://sl:89xeVXRX95xhwPNM@nexus.sector.sh/repository/pypi/simple
+pyheif==0.5.1+sl.2
