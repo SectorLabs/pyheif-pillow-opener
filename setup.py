@@ -18,7 +18,7 @@ except ImportError:
         from pip.download import PipSession
         from pip.req import parse_requirements
 
-__version__ = "0.2.0"
+__version__ = "0.2.0" + '+sl.1'
 
 github_url = "https://github.com/ciotto"
 package_name = "pyheif-pillow-opener"
@@ -45,7 +45,7 @@ setup(
     name=package_name,
     packages=find_packages(exclude=["docs", "tests*"]),
     include_package_data=True,
-    version=__version__,
+    version=os.environ.get('VERSION', __version__),
     description="pyheif-pillow-opener is a simple HEIF/HEIC opener for Pillow base on pyhief library.",
     long_description=long_description,
     long_description_content_type="text/markdown",
